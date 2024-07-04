@@ -1,24 +1,50 @@
-# Predictive-Analytics.Py
+# PredictiveAnalyticsPy
+
+---
 ## Overview
 
-Welcome to **PredictiveAnalyticsPy**! This repository contains a collection of machine learning models and tools for predictive analytics using Python. Our focus is on creating easy-to-use and efficient predictive models for various types of data.
+Welcome to **PredictiveAnalyticsPy**! This repository contains a collection of machine learning projects focusing on predictive analytics using Python. Each project aims to provide practical, hands-on examples of applying various machine learning algorithms to real-world datasets.
 
-## Features
+## Projects
 
-- **Regression Models**: Linear Regression, Polynomial Regression, Ridge Regression, Lasso Regression.
-- **Classification Models**: Logistic Regression, Decision Trees, Random Forest, Support Vector Machines (SVM), K-Nearest Neighbors (KNN).
-- **Time Series Forecasting**: ARIMA, SARIMA, Prophet.
-- **Clustering Models**: K-Means, Hierarchical Clustering, DBSCAN.
-- **Data Preprocessing**: Scaling, Encoding, Imputation.
-- **Evaluation Metrics**: Accuracy, Precision, Recall, F1 Score, Mean Squared Error (MSE), Mean Absolute Error (MAE).
+1. **Women Cloth Reviews Prediction with Multi Nominal Naïve Bayes**
+    - A project to predict sentiments from women's clothing reviews using Multinomial Naïve Bayes.
+    
+2. **Bank Customer Churn Model**
+    - A real-world example to predict bank customer churn using various machine learning techniques.
+    
+3. **Hill and Valley Prediction with Logistic Regression**
+    - A project to classify data points as hill or valley using logistic regression.
+    
+4. **Big Sales Prediction using Random Forest Regressor**
+    - A project to predict big sales figures using the Random Forest Regressor.
+    
+5. **Movie Recommendation System**
+    - A real-world example of building a movie recommendation system.
+    
+6. **Hand Written Digit Prediction - Classification Analysis**
+    - A project to classify handwritten digits using machine learning techniques.
+    
+7. **Financial Market News Sentiment Analysis**
+    - A project to analyze the sentiment of financial market news.
+    
+8. **Mileage Prediction - Regression Analysis**
+    - A project to predict vehicle mileage using regression analysis.
+    
+9. **Wine Quality Prediction with Support Vector Machine**
+    - A real-world example of predicting wine quality using SVM.
+    
+10. **Servo Prediction using Linear Regression**
+    - A project to predict servo system performance using linear regression.
 
+---
 ## Installation
 
 To get started with **PredictiveAnalyticsPy**, you need to have Python 3.x installed on your machine. Follow the steps below to set up the repository:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/PredictiveAnalyticsPy.git
+    git clone https://github.com/data-manavpatil/PredictiveAnalyticsPy.git
     ```
 2. Navigate to the repository directory:
     ```sh
@@ -31,52 +57,26 @@ To get started with **PredictiveAnalyticsPy**, you need to have Python 3.x insta
 
 ## Usage
 
-Here is a basic example of how to use a regression model from this repository:
+Here is a basic example of how to use one of the projects in this repository:
 
 ```python
-import numpy as np
 import pandas as pd
-from predictive_analytics.regression import LinearRegressionModel
+from predictive_analytics.naive_bayes import MultinomialNaiveBayesModel
 
 # Load dataset
-data = pd.read_csv('data/sample_data.csv')
-X = data[['feature1', 'feature2']]
-y = data['target']
+data = pd.read_csv('data/women_cloth_reviews.csv')
+X = data['review_text']
+y = data['sentiment']
 
 # Initialize and train the model
-model = LinearRegressionModel()
+model = MultinomialNaiveBayesModel()
 model.train(X, y)
 
 # Make predictions
 predictions = model.predict(X)
 print(predictions)
 ```
-
-## Project Structure
-
-```
-PredictiveAnalyticsPy/
-├── data/                   # Sample datasets
-├── notebooks/              # Jupyter notebooks for examples and tutorials
-├── predictive_analytics/   # Python modules for different models
-│   ├── __init__.py
-│   ├── regression.py
-│   ├── classification.py
-│   ├── clustering.py
-│   ├── time_series.py
-│   └── preprocessing.py
-├── tests/                  # Unit tests for the modules
-│   ├── test_regression.py
-│   ├── test_classification.py
-│   ├── test_clustering.py
-│   ├── test_time_series.py
-│   └── test_preprocessing.py
-├── .gitignore
-├── LICENSE
-├── README.md
-└── requirements.txt
-```
-
+---
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute, please follow these steps:
@@ -88,9 +88,10 @@ We welcome contributions from the community! If you'd like to contribute, please
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a new Pull Request.
 
+---
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
 
 ## Acknowledgments
 
@@ -98,4 +99,4 @@ Special thanks to all the contributors and the open-source community for their v
 
 ---
 
-Feel free to modify this template to better suit the specifics of your repository.
+Feel free to modify this template to better suit the specifics of your projects.
