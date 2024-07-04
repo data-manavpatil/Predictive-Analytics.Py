@@ -1,4 +1,4 @@
-# PredictiveAnalyticsPy
+# PredictiveAnalytics.Py
 
 ---
 ## Overview
