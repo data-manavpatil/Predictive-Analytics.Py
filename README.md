@@ -1,4 +1,4 @@
-# Predictive Analytics.py
+# PredictivePy
 
 ## Overview
 This repository contains Python scripts and Jupyter notebooks focused on predictive analytics projects. Each project utilizes various machine learning algorithms and statistical techniques to predict outcomes based on datasets provided.
@@ -14,8 +14,8 @@ pip install -r requirements.txt
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/predictive_analytics.py.git
-cd predictive_analytics.py
+git clone https://github.com/YourUsername/predictivePy.git
+cd predictivePy
 ```
 
 2. Navigate to the project of interest in the `projects/` directory.
